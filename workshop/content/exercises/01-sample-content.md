@@ -68,4 +68,4 @@ ingress_protocol: {{ ingress_protocol }}
 
 #### Web site links
 
-[External](https://github.com/eduk8s)
+[External](https://github.com/ccollicutt)
