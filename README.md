@@ -1,4 +1,4 @@
-# Spring Cloud Gateway for Kubernetes Learning Center
+# WIP: Spring Cloud Gateway for Kubernetes Learning Center
 
 Sample workshop content using Markdown formatting for pages.
 
@@ -6,8 +6,8 @@ If you already have the Educates operator installed and configured, to
 deploy and view this sample workshop, run:
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/master/resources/workshop.yaml
-kubectl apply -f https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/master/resources/training-portal.yaml
+kubectl apply -f https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/main/resources/workshop.yaml
+kubectl apply -f https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/main/resources/training-portal.yaml
 ```
 
 This will deploy a training portal hosting just this workshop. To get the
