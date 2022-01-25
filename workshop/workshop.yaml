@@ -1,8 +1,8 @@
-name: Markdown Sample
+name: Spring Cloud Gateway for Kubernetes
 
 modules:
     activate:
     - workshop-overview
     - setup-environment
-    - exercises/01-sample-content
+    - exercises/01-define-gateway-instance
     - workshop-summary
