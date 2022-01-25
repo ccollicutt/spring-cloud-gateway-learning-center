@@ -10,7 +10,7 @@ spec:
   duration: 15m
   url: https://github.com/ccollicutt/spring-cloud-gateway-learning-center
   content:
-    files: github.com/ccollicutt/spring-cloud-gateway-learning-center:main
+    files: github.com/ccollicutt/spring-cloud-gateway-learning-center?ref=main
   session:
     namespaces:
       budget: small
