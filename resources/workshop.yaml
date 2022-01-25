@@ -13,7 +13,7 @@ spec:
     files: github.com/ccollicutt/spring-cloud-gateway-learning-center?ref=main
   session:
     namespaces:
-      budget: small
+      budget: large
     applications:
       terminal:
         enabled: true
