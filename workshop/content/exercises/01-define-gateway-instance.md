@@ -42,4 +42,5 @@ Apply that manifest.
 kubectl apply -f demo/mapping.yml
 ```
 
+Now curl the localhost
 

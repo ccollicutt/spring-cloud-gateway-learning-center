@@ -1,17 +1,16 @@
 apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: spring-cloud-gateway-for-kubernetes
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
+  title: Spring Cloud Gateway for Kubernetes
+  description: A workshop for using Spring Cloud Gateway for Kubernetes
   vendor: eduk8s.io
   difficulty: beginner
   duration: 15m
-  url: https://github.com/ccollicutt/lab-markdown-sample
+  url: https://github.com/ccollicutt/spring-cloud-gateway-learning-center
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/ccollicutt/lab-markdown-sample
+    files: github.com/ccollicutt/spring-cloud-gateway-learning-center
   session:
     namespaces:
       budget: small
