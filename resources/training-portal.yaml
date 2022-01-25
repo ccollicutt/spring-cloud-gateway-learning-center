@@ -6,6 +6,8 @@ spec:
   portal:
     registration:
       type: anonymous
+    updates:
+      workshop: true
   workshops:
   - name: spring-cloud-gateway-for-kubernetes
     capacity: 1
