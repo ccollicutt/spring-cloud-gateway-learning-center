@@ -37,15 +37,15 @@ kubectl get scg,statefulsets,pods,pvc
 You can watch the logs or describe the various objects while you are waiting, example:
 
 ```execute-2
-sleep 20; echo "sleeping for 20..."; kubectl logs my-gateway-0 --follow
+echo "sleeping for 20..."; sleep 20; kubectl logs my-gateway-0 --follow
 ```
 
 Once the gateway's ready status is true, move onto the next section.
 
 Stop following the logs.
 
-```execute-2
-<ctrl-c>
+```terminal:interrupt
+session: 2
 ```
 
 ## Add a Route
@@ -126,7 +126,7 @@ Note how the response should include the added headers.
 
 Example output (some output removed for brevity):
 
-```
+```bash
 $ curl localhost:8080/routed/get -H "hello: world"
 SNIP
     "Forwarded": "proto=http;host=\"localhost:8080\";for=\"127.0.0.1:45948\"", 
