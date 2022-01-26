@@ -4,12 +4,11 @@ metadata:
   name: spring-cloud-gateway-for-kubernetes
 spec:
   portal:
-    registration:
-      type: anonymous
+    password: tanzuscg
     updates:
       workshop: true
   workshops:
   - name: spring-cloud-gateway-for-kubernetes
-    capacity: 1
+    capacity: 5
     expires: 60m
     orphaned: 5m

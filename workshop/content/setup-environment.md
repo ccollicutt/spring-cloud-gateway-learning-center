@@ -1,7 +1,4 @@
-This lab requries that the Spring Cloud Gateway Kubernetes Operator has already been depl;oyed into the Kubernetes cluster.
+This lab requries that the Spring Cloud Gateway Kubernetes Operator has already been deployed into the Kubernetes cluster that the workshop is using.
 
-Run this command to ensure that there are pod running in the cluster that make up the Spring Cloud Gateway Kubernetes Operator.
+>NOTE: This workshop will not deploy Spring Cloud Gateway for Kubernetes.
 
-```execute
-k get pods -A -l app=scg-operator
-```

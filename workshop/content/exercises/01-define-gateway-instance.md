@@ -1,5 +1,13 @@
 # Define a gateway instance
 
+To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session.
+
+```execute-1
+kubectl get scg,statefulsets,pods,pvc
+```
+
+The above command should return nothing.
+
 Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
 
 ```execute-1
@@ -12,10 +20,12 @@ Execute the below command which will submit a request to the cluster to deploy a
 kubectl apply -f demo/my-gateway.yaml 
 ```
 
+>NOTE: It can take a few minutes for the gateway to initially come up.
+
 You should see a pod of the spring cloud gateway running or being launched in the cluster's default namespace as shown in the output below.
 
 ```execute-1
-kubectl get scg,statefulsets,pods
+kubectl get scg,statefulsets,pods,pvc
 ```
 
 Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
@@ -43,4 +53,3 @@ kubectl apply -f demo/mapping.yaml
 ```
 
 Now curl the localhost
-
