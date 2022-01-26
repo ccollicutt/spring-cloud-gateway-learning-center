@@ -48,6 +48,8 @@ spec:
             - springcloudgatewaymappings
             - springcloudgatewayrouteconfigs
             - springcloudgateways
+            - springcloudgateways/status
+            - springcloudgateways/scale
           verbs:
             - get
             - list

@@ -1,4 +1,4 @@
-# Define a gateway instance
+# Start Using Spring Cloud Gateway for Kubernetes
 
 To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session.
 
@@ -8,7 +8,7 @@ kubectl get scg,statefulsets,pods,pvc
 
 The above command should return no resources.
 
-## Create a Gateway
+## Create a Gateway Service Instance
 
 Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
 
