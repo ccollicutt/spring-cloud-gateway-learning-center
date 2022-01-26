@@ -22,5 +22,5 @@ This lab requires that the Spring Cloud Gateway for Kubernetes Operator has alre
 
 ## Notes of Thanks
 
-Please note that this workshop was translated from [Adib Saikali's Spring Cloud WOrkshop](https://github.com/asaikali/spring-one-2021-gateway-for-k8s-workshop).
+Please note that this workshop was translated from [Adib Saikali's Spring Cloud Workshop](https://github.com/asaikali/spring-one-2021-gateway-for-k8s-workshop).
 
