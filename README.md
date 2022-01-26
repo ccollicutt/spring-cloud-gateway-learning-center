@@ -1,9 +1,8 @@
 # WIP: Spring Cloud Gateway for Kubernetes Learning Center
 
-Sample workshop content using Markdown formatting for pages.
+A VMware Tanzu Learning Center workshop to experiment with Spring Cloud Gateway for Kubernetes.
 
-If you already have the Educates operator installed and configured, to
-deploy and view this sample workshop, run:
+## Deploy the Workshop
 
 ```
 kubectl apply -f https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/main/resources/workshop.yaml
@@ -17,9 +16,9 @@ URL for accessing the training portal run:
 kubectl get trainingportal/spring-cloud-gateway-learning-center
 ```
 
-The training portal is configured to allow anonymous access. For your own
-workshop content you should consider removing anonymous access.
+## Lab Requirements
 
+This lab requires that the Spring Cloud Gateway for Kubernetes Operator has already been deployed into the Kubernetes cluster that the workshop is using.
 
 ## Notes of Thanks
 

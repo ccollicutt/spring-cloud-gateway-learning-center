@@ -1,1 +1,1 @@
-A guided tutorial for experimenting with Tanzu Spring Cloud Gateway on minikube.
+A guided tutorial for experimenting with [VMware Spring Cloud Gateway for Kubernetes](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html).
