@@ -4,6 +4,8 @@ modules:
         exit_sign: Start Using Spring Cloud Gateway
     exercises/01-define-gateway-instance:
         name: Define a Gateway Instance
+    exercises/02-scale-up-down:
+        name: Scale Gateway Instances Up and Down
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop
