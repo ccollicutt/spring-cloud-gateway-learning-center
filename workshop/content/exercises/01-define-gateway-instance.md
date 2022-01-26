@@ -32,15 +32,21 @@ You should see a pod of the spring cloud gateway running or being launched in th
 kubectl get scg,statefulsets,pods,pvc
 ```
 
->NOTE: Don't move on until the gateway is labled true.
+>NOTE: Don't move on until the gateway is labeled true.
 
 You can watch the logs or describe the various objects while you are waiting, example:
 
-```execute-1
-kubectl logs my-gateway-0 
+```execute-2
+sleep 20; echo "sleeping for 20..."; kubectl logs my-gateway-0 --follow
 ```
 
-Once the gatway's ready status is true, move onto the next section.
+Once the gateway's ready status is true, move onto the next section.
+
+Stop following the logs.
+
+```execute-2
+<ctrl-c>
+```
 
 ## Add a Route
 
@@ -54,6 +60,12 @@ Apply that manifest.
 
 ```execute-1
 kubectl apply -f demo/route-config.yaml
+```
+
+Check the status.
+
+```execute-1
+kubectl get springcloudgatewayrouteconfigs
 ```
 
 Now let's map that route to a gateway.
@@ -76,6 +88,12 @@ At this point we should also have some services available.
 
 ```execute-1
 kubectl get svc
+```
+
+Check the mapping.
+
+```execute-1
+kubectl get springcloudgatewaymappings
 ```
 
 ## Test the Gateway
@@ -103,3 +121,19 @@ Below I'm setting the headers "hello:world" and httpbin will return those same h
 ```execute-1
 curl localhost:8080/routed/get -H "hello: world"
 ```
+
+Note how the response should include the added headers.
+
+Example output (some output removed for brevity):
+
+```
+$ curl localhost:8080/routed/get -H "hello: world"
+SNIP
+    "Forwarded": "proto=http;host=\"localhost:8080\";for=\"127.0.0.1:45948\"", 
+    "Hello": "world", 
+    "Host": "httpbin.org", 
+SNIP
+}
+```
+
+This section of the workshop is now completed.
