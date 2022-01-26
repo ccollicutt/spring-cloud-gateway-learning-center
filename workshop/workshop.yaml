@@ -3,6 +3,7 @@ name: Spring Cloud Gateway for Kubernetes
 modules:
     activate:
     - workshop-overview
-    - exercises/01-define-gateway-instance
-    - exercises/02-scale-up-down
+    - exercises/define-gateway-instance
+    - exercises/add-route-and-mapping
+    - exercises/scale-up-down
     - workshop-summary
