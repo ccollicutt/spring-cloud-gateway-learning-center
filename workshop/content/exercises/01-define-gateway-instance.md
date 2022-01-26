@@ -1,6 +1,6 @@
 # Define a gateway instance
 
-Inspect the demo/my-gateway.yml file it contains the YAML shown below which defines a spring cloud gateway instance.
+Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
 
 ```execute-1
 cat demo/my-gateway.yaml
@@ -9,7 +9,7 @@ cat demo/my-gateway.yaml
 Execute the below command which will submit a request to the cluster to deploy an instance of spring cloud gateway.
 
 ```execute-1
-kubectl apply -f demo/my-gateway.yml 
+kubectl apply -f demo/my-gateway.yaml 
 ```
 
 You should see a pod of the spring cloud gateway running or being launched in the cluster's default namespace as shown in the output below.
@@ -18,28 +18,28 @@ You should see a pod of the spring cloud gateway running or being launched in th
 kubectl get all
 ```
 
-Inspect the file demo/route-config.yml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
+Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
 
 ```execute-1
-cat demo/route-config.yml
+cat demo/route-config.yaml
 ```
 
 Apply that manifest.
 
 ```execute-1
-kubectl apply -f demo/route-config.yml
+kubectl apply -f demo/route-config.yaml
 ```
 
-Inspect the file demo/mapping.yml notice that it points at the gateway instance we already deployed at the configuration defined in route-config.yml
+Inspect the file demo/mapping.yaml notice that it points at the gateway instance we already deployed at the configuration defined in route-config.yaml
 
 ```execute-1
-cat demo/mapping.yml
+cat demo/mapping.yaml
 ```
 
 Apply that manifest.
 
 ```execute-1
-kubectl apply -f demo/mapping.yml
+kubectl apply -f demo/mapping.yaml
 ```
 
 Now curl the localhost
