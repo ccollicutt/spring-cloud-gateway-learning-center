@@ -6,12 +6,16 @@ To start, there will be no springcloudgateways (scg), pods, or stateful sets in 
 kubectl get scg,statefulsets,pods,pvc
 ```
 
-The above command should return nothing.
+The above command should return no resources.
+
+## Create a Gateway
 
 Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
 
-```execute-1
-cat demo/my-gateway.yaml
+>NOTE: This will open in the editor.
+
+```editor:open-file
+file: ~/demo/my-gateway.yaml
 ```
 
 Execute the below command which will submit a request to the cluster to deploy an instance of spring cloud gateway.
@@ -28,10 +32,22 @@ You should see a pod of the spring cloud gateway running or being launched in th
 kubectl get scg,statefulsets,pods,pvc
 ```
 
-Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
+>NOTE: Don't move on until the gateway is labled true.
+
+You can watch the logs or describe the various objects while you are waiting, example:
 
 ```execute-1
-cat demo/route-config.yaml
+kubectl logs my-gateway-0 
+```
+
+Once the gatway's ready status is true, move onto the next section.
+
+## Add a Route
+
+Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
+
+```editor:open-file
+file: ~/demo/route-config.yaml
 ```
 
 Apply that manifest.
@@ -42,10 +58,12 @@ kubectl apply -f demo/route-config.yaml
 
 Now let's map that route to a gateway.
 
+## Map a Route to a Gateway
+
 Inspect the file demo/mapping.yaml notice that it points at the gateway instance we already deployed at the configuration defined in route-config.yaml
 
-```execute-1
-cat demo/mapping.yaml
+```editor:open-file
+file: ~/demo/mapping.yaml
 ```
 
 Apply that manifest.
@@ -59,6 +77,8 @@ At this point we should also have some services available.
 ```execute-1
 kubectl get svc
 ```
+
+## Test the Gateway
 
 We can port forward to the my-gateway service to access the gateway locally.
 

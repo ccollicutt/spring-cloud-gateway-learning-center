@@ -1,7 +1,7 @@
 modules:
     workshop-overview:
         name: Workshop Overview
-        exit_sign: Setup Environment
+        exit_sign: Start Using Spring Cloud Gateway
     exercises/01-define-gateway-instance:
         name: Define a Gateway Instance
     workshop-summary:
