@@ -15,7 +15,7 @@ kubectl apply -f demo/my-gateway.yaml
 You should see a pod of the spring cloud gateway running or being launched in the cluster's default namespace as shown in the output below.
 
 ```execute-1
-kubectl get all
+kubectl get scg,statefulsets,pods
 ```
 
 Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
