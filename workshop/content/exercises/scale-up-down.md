@@ -1,5 +1,3 @@
-# Scale SCGK Service Instances Up and Down
-
 First, let's review the gateway manifest.
 
 ```execute-1

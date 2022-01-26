@@ -1,5 +1,3 @@
-# Start Using Spring Cloud Gateway for Kubernetes
-
 To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session.
 
 ```execute-1

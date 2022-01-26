@@ -4,6 +4,6 @@ modules:
     activate:
     - workshop-overview
     - exercises/define-gateway-instance
-    - exercises/add-route-and-mapping
     - exercises/scale-up-down
+    - exercises/add-route-and-mapping
     - workshop-summary
