@@ -4,6 +4,8 @@ metadata:
   name: spring-cloud-gateway-for-kubernetes
 spec:
   portal:
+    registration:
+      type: anonymous
     password: tanzuscg
     updates:
       workshop: true
