@@ -35,7 +35,7 @@ kubectl get scg,statefulsets,pods,pvc
 You can watch the logs or describe the various objects while you are waiting, example:
 
 ```execute-2
-kubectl wait --for=condition=Ready pod/my-gateway-0 && kubectl logs -f my-gateway-0
+kubectl wait --for=condition=Ready --timeout=180s pod/my-gateway-0 && kubectl logs -f my-gateway-0
 ```
 
 Once the gateway's ready status is true, move onto the next section.
