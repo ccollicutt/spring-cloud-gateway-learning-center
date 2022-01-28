@@ -68,14 +68,14 @@ We can update the configuration. In this
 ```editor:append-lines-to-file
 file: ~/demo/my-gateway.yaml
 text: |
-spec:
-  resources:
-    requests:
-      memory: "512Mi"
-      cpu: "1"
-    limits:
-      memory: "1Gi"
-      cpu: "2"
+    spec:
+      resources:
+        requests:
+          memory: "512Mi"
+          cpu: "1"
+        limits:
+          memory: "1Gi"
+          cpu: "2"
 ```
 
 And apply it.
