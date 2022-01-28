@@ -4,7 +4,7 @@ metadata:
   name: my-gateway-ingress
 spec: 
   rules: 
-    - host: $SESSION_NAME.$INGRESS_DOMAIN
+    - host: $SESSION_NAME-ingress.$INGRESS_DOMAIN
       http: 
         paths:
           - path: /
