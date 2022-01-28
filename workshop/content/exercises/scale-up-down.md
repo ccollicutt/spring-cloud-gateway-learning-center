@@ -56,7 +56,7 @@ By default, the pods will have a request of:
 
 |        | Request | Limit |
 |--------|---------|-------|
-| Memory | 256Mi   | 512M  |
+| Memory | 256Mi   | 512Mi |
 | CPU    | 500m    | 2     |
 
 ```execute-1
