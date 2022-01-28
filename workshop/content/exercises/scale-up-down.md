@@ -81,10 +81,15 @@ text: |
 And apply it.
 
 ```execute-1
-kubectl apply -f ~/demos/my-gateway.yaml
+kubectl apply -f ~/demo/my-gateway.yaml
 ```
 
 >NOTE: The pod will restart!
 
 Now we'll have a new pod with a new request limit.
 
+```execute-1
+kubectl describe pod my-gateway-0 | grep Limits -A 5
+```
+
+Should be 512Mi for memory now.

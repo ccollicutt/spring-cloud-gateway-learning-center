@@ -8,6 +8,8 @@ modules:
         name: Scale Gateway Instances Up and Down
     exercises/add-route-and-mapping:
         name: Add a Route and Mapping to a Gateway
+    exercises/ingress:
+        name: Configure an Ingress for the Gateway
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

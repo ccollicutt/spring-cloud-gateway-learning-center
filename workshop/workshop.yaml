@@ -6,4 +6,5 @@ modules:
     - exercises/define-gateway-instance
     - exercises/scale-up-down
     - exercises/add-route-and-mapping
+    - exercises/ingress
     - workshop-summary
