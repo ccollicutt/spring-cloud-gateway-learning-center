@@ -1,4 +1,4 @@
-## Create a Route
+### Create a Route
 
 Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.
 
@@ -20,7 +20,7 @@ kubectl get springcloudgatewayrouteconfigs
 
 Now let's map that route to a gateway.
 
-## Map a Route to a Gateway
+### Map a Route to a Gateway
 
 Inspect the file demo/mapping.yaml notice that it points at the gateway instance we already deployed at the configuration defined in route-config.yaml
 
@@ -46,7 +46,7 @@ Check the mapping.
 kubectl get springcloudgatewaymappings
 ```
 
-## Test the Route, Mapping and Gateway
+### Test the Route, Mapping and Gateway
 
 We can port forward to the my-gateway service to access the gateway locally.
 
@@ -86,4 +86,8 @@ SNIP
 }
 ```
 
-This section of the workshop is now completed.
+Shutdown the port fowarding.
+
+```terminal:interrupt
+session: 2
+```

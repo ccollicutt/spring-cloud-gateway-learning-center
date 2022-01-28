@@ -6,7 +6,7 @@ kubectl get scg,statefulsets,pods,pvc
 
 The above command should return no resources.
 
-## Create a Gateway Service Instance
+### Create a Gateway Service Instance
 
 Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
 
@@ -35,7 +35,7 @@ kubectl get scg,statefulsets,pods,pvc
 You can watch the logs or describe the various objects while you are waiting, example:
 
 ```execute-2
-echo "sleeping for 20..."; sleep 20; kubectl logs my-gateway-0 --follow
+kubectl wait --for=condition=Ready pod/my-gateway-0 && kubectl logs -f my-gateway-0
 ```
 
 Once the gateway's ready status is true, move onto the next section.
