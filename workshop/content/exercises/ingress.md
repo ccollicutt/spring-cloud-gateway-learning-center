@@ -2,6 +2,8 @@ Review the ingress manifest.
 
 >NOTE: The manifest has been configured for your specific workshop session.
 
+>NOTE: This ingress is not configured for TLS.
+
 ```execute-1
 cat ~/demo/ingress.yaml
 ```

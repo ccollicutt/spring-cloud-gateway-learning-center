@@ -76,7 +76,7 @@ Note how the response should include the added headers.
 
 Example output (some output removed for brevity):
 
-```bash
+```
 $ curl localhost:8080/routed/get -H "hello: world"
 SNIP
     "Forwarded": "proto=http;host=\"localhost:8080\";for=\"127.0.0.1:45948\"", 
