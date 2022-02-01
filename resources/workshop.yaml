@@ -7,13 +7,16 @@ spec:
   description: A workshop for using Spring Cloud Gateway for Kubernetes
   vendor: eduk8s.io
   difficulty: beginner
-  duration: 15m
+  duration: 60m
   url: https://github.com/ccollicutt/spring-cloud-gateway-learning-center
   content:
     files: github.com/ccollicutt/spring-cloud-gateway-learning-center?ref=main
   session:
     namespaces:
       budget: large
+      limits:
+        min:
+          cpu: 25m
     applications:
       terminal:
         enabled: true
