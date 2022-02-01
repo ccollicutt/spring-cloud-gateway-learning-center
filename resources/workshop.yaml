@@ -10,6 +10,7 @@ spec:
   duration: 60m
   url: https://github.com/ccollicutt/spring-cloud-gateway-learning-center
   content:
+    image: servicerouting.azurecr.io/sr/scgk-workshop
     files: github.com/ccollicutt/spring-cloud-gateway-learning-center?ref=main
   session:
     namespaces:
