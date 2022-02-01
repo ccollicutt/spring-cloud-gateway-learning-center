@@ -40,6 +40,12 @@ spec:
           namespace: $(workshop_namespace)
           name: $(service_account)
     - apiVersion: v1
+      imagePullSecrets:
+      - name: tap-registry
+      kind: ServiceAccount
+      metadata:
+        name: default
+    - apiVersion: v1
       data:
         .dockerconfigjson: e30K
       kind: Secret
@@ -69,9 +75,3 @@ spec:
           - services
           verbs:
           - '*'
-        - apiVersion: v1
-          imagePullSecrets:
-          - name: tap-registry
-          kind: ServiceAccount
-          metadata:
-            name: default
