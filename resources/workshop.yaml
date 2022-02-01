@@ -41,6 +41,15 @@ spec:
           name: $(service_account)
   environment:
     objects:
+    - apiVersion: v1
+      data:
+        .dockerconfigjson: e30K
+      kind: Secret
+      metadata:
+        annotations:
+          secretgen.carvel.dev/image-pull-secret: ""
+        name: tap-registry
+      type: kubernetes.io/dockerconfigjson
     - apiVersion: rbac.authorization.k8s.io/v1
       kind: ClusterRole
       metadata:
@@ -62,3 +71,9 @@ spec:
           - services
           verbs:
           - '*'
+    - apiVersion: v1
+      imagePullSecrets:
+      - name: tap-registry
+      kind: ServiceAccount
+      metadata:
+        name: default
