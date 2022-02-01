@@ -39,8 +39,6 @@ spec:
         - kind: ServiceAccount
           namespace: $(workshop_namespace)
           name: $(service_account)
-  environment:
-    objects:
     - apiVersion: v1
       data:
         .dockerconfigjson: e30K
