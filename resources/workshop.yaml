@@ -39,12 +39,12 @@ spec:
         - kind: ServiceAccount
           namespace: $(workshop_namespace)
           name: $(service_account)
-    - apiVersion: v1
-      imagePullSecrets:
-      - name: tap-registry
-      kind: ServiceAccount
-      metadata:
-        name: default
+    # - apiVersion: v1
+    #   kind: ServiceAccount
+    #   metadata:
+    #     name: default
+    #   imagePullSecrets:
+    #   - name: tap-registry
     - apiVersion: v1
       data:
         .dockerconfigjson: e30K
