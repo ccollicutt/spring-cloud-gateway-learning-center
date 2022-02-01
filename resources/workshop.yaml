@@ -54,10 +54,10 @@ spec:
             - springcloudgateways/status
             - springcloudgateways/scale
           verbs:
-            - get
-            - list
-            - watch
-            - create
-            - delete
-            - patch
-            - update
+            - '*'
+        - apiGroups:
+          - serving.knative.dev
+          resources:
+          - services
+          verbs:
+          - '*'
