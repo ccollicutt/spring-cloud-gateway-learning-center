@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: http-echo-two
+spec:
+  ports:
+  - port: 80
+    targetPort: 5678
+  selector:
+    app: http-echo-two
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: http-echo-two
+spec:
+  selector:
+    matchLabels:
+      app: http-echo-two
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: http-echo-two
+    spec:
+      containers:
+      - name: http-echo-two
+        image: hashicorp/http-echo
+        args:
+        - "-text=http-echo-two"
+        ports:
+        - containerPort: 5678
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: http-echo-two 
+spec:
+  rules:
+  - host: http-echo-two-$SESSION_NAME.$INGRESS_DOMAIN 
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: http-echo-two 
+            port:
+              number: 80
