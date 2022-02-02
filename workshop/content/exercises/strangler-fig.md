@@ -3,7 +3,7 @@ First, let's deploy two services. We'll pretend "http-echo-one" is the legacy se
 
 ```execute-1
 kubectl create -f ~/demo/http-echo-one.yaml
-kubectl create -f ~/demo/http-echo-one.yaml
+kubectl create -f ~/demo/http-echo-two.yaml
 ```
 
 We should now have two services running, also with ingress.

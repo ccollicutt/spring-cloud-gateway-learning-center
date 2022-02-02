@@ -18,7 +18,7 @@ spec:
       uri: http://http-echo-one-$SESSION_NAME.$INGRESS_DOMAIN
     - predicates:
         - Path=/api/**
-      uri: http://http-echo-two-$SESSION_NAME.$INGRESS_DOMAIN
+      uri: http://http-echo-one-$SESSION_NAME.$INGRESS_DOMAIN
 ---
 apiVersion: "tanzu.vmware.com/v1"
 kind: SpringCloudGatewayMapping

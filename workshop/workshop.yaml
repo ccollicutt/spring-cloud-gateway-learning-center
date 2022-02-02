@@ -7,5 +7,5 @@ modules:
     - exercises/scale-up-down
     - exercises/add-route-and-mapping
     - exercises/ingress
-    - exercises/concurrency-and-rollouts
+    - exercises/strangler-fig
     - workshop-summary
