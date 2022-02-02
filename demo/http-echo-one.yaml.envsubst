@@ -27,7 +27,7 @@ spec:
       - name: http-echo-one
         image: hashicorp/http-echo
         args:
-        - "-text=http-echo-one"
+        - "-text=legacy"
         ports:
         - containerPort: 5678
 ---

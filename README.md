@@ -20,7 +20,9 @@ kubectl get trainingportal/spring-cloud-gateway-learning-center
 
 This lab requires that the Spring Cloud Gateway for Kubernetes Operator has already been deployed into the Kubernetes cluster that the workshop is using.
 
-## Notes of Thanks
+## Standing on the Shoulders of Giants
 
-Please note that this workshop was translated from [Adib Saikali's Spring Cloud Workshop](https://github.com/asaikali/spring-one-2021-gateway-for-k8s-workshop).
+Please note that some of this workshop was translated from [Adib Saikali's Spring Cloud Workshop](https://github.com/asaikali/spring-one-2021-gateway-for-k8s-workshop).
+
+As well, this blog post: [Advanced Service Concurrency and Rollouts with Tanzu](https://tanzu.vmware.com/developer/blog/advanced-service-concurrency-and-rollouts-with-tanzu/)
 

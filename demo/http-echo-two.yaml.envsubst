@@ -27,7 +27,7 @@ spec:
       - name: http-echo-two
         image: hashicorp/http-echo
         args:
-        - "-text=http-echo-two"
+        - "-text=microservice"
         ports:
         - containerPort: 5678
 ---
