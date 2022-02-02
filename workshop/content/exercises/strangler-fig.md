@@ -24,10 +24,10 @@ kubectl get svc,ing
 Next, let's setup the weighted route and mapping.
 
 ```execute-1
-kubectl create -f ~/demo/weighted-routes-1.yaml
+kubectl create -f ~/demo/strangler-fig.yaml
 ```
 
-If we curl /api, then we should only see "http-echo-one".
+First, let's curl the legacy app. If we curl /api, then we should only see "legacy".
 
 ```execute-2
 while true; do curl $SESSION_NAME-ingress.$INGRESS_DOMAIN/api/; sleep 2; done
@@ -39,9 +39,11 @@ Let that session run for a bit, then stop it.
 session: 2
 ```
 
+Next, let's check the strangler fig pattern.
+
 If we curl /api/catalog, some of the times, one out of ten times or so (over a longer period of time should be exactly 1/10) we will get "http-echo-two", ie. 10% of requests will go to the http-echo-two service.
 
-About 10% of the traffic will now go to "http-echo-two", the new microservice.
+About 10% of the traffic will now go to "microservice", the new microservice.
 
 ```execute-2
 while true; do curl $SESSION_NAME-ingress.$INGRESS_DOMAIN/api/catalog; sleep 2; done
