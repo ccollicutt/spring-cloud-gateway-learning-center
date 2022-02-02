@@ -4,8 +4,8 @@ Review the ingress manifest.
 
 >NOTE: This ingress is not configured for TLS.
 
-```execute-1
-cat ~/demo/ingress.yaml
+```editor:open-file
+file: ~/demo/ingress.yaml
 ```
 
 Create an ingress.

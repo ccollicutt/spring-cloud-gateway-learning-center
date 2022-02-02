@@ -12,5 +12,5 @@ spec:
   workshops:
   - name: spring-cloud-gateway-for-kubernetes
     capacity: 5
-    expires: 60m
+    expires: 90m
     orphaned: 5m

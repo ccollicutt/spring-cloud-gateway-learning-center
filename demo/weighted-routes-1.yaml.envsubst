@@ -1,0 +1,31 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: catalog-route-config
+spec:
+  service:
+    namespace: catalog
+    port: 80
+    name: catalog
+  routes:
+    - predicates:
+        - Path=/api/catalog/**
+        - Weight=catalog-group, 1
+      uri: http://http-echo-two-$SESSION_NAME.$INGRESS_DOMAIN
+    - predicates:
+        - Path=/api/catalog/**
+        - Weight=catalog-group, 9
+      uri: http://http-echo-one-$SESSION_NAME.$INGRESS_DOMAIN
+    - predicates:
+        - Path=/api/**
+      uri: http://http-echo-two-$SESSION_NAME.$INGRESS_DOMAIN
+---
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: catalog-route-config-mapping
+spec:
+  gatewayRef:
+    name: my-gateway
+  routeConfigRef:
+    name: catalog-route-config
