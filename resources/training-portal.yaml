@@ -1,7 +1,7 @@
 apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: TrainingPortal
 metadata:
-  name: spring-cloud-gateway-for-kubernetes
+  name: spring-cloud-gateway
 spec:
   portal:
     registration:
