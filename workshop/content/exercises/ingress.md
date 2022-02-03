@@ -1,4 +1,6 @@
-Review the ingress manifest.
+To provide external access to the Spring Cloud Gateway instance, we need to configure some form of "ingress", either a true Kubernetes Ingress, or something like HTTPProxy provided by [Contour](https://projectcontour.io/) for example.
+
+First, review the ingress manifest.
 
 >NOTE: The manifest has been configured for your specific workshop session.
 
@@ -8,7 +10,7 @@ Review the ingress manifest.
 file: ~/demo/ingress.yaml
 ```
 
-Create an ingress.
+Now create the ingress.
 
 ```execute-1
 kubectl apply -f ~/demo/ingress.yaml
@@ -20,7 +22,7 @@ Review the created ingress.
 kubectl get ingress
 ```
 
-Curl the ingress.
+Curl the ingress, including "/routed/get" for the SCG route.
 
 ```execute-1
 curl http://$SESSION_NAME-ingress.$INGRESS_DOMAIN/routed/get -H "hello: world"
