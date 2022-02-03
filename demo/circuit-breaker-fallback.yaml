@@ -1,0 +1,17 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: circuit-breaker-route-config
+spec:
+  routes:
+    - uri: https://httpbin.org
+      filters:
+      - CircuitBreaker=myCircuitBreaker,forward:/fallback/get
+      predicates:
+       - Path=/breaker/**
+    - uri: https://httpbin.org
+      predicates:
+      - Path=/fallback/get
+      filters:
+      - FallbackHeaders=X-Exception
+      - StripPrefix=1

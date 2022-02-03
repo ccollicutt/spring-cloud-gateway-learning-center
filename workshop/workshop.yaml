@@ -9,4 +9,5 @@ modules:
     - exercises/actuators    
     - exercises/ingress
     - exercises/strangler-fig
+    - exercises/circuit-breaker
     - workshop-summary

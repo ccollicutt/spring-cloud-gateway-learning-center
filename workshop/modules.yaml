@@ -12,6 +12,8 @@ modules:
         name: Spring Cloud Gateway Service Instance Actuators
     exercises/strangler-fig:
         name: Use the Strangler Fig Pattern
+    exercises/circuit-breaker:
+        name: Use a Circuit Breaker
     exercises/ingress:
         name: Configure an Ingress for the Gateway
     workshop-summary:

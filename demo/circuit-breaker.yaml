@@ -1,0 +1,21 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: circuit-breaker-route-config
+spec:
+  routes:
+    - uri: https://httpbin.org
+      predicates:
+        - Path=/breaker/**
+      filters:
+        - CircuitBreaker=myCircuitBreaker
+---
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: circuit-breaker-route-config-mapping
+spec:
+  gatewayRef:
+    name: my-gateway
+  routeConfigRef:
+    name: circuit-breaker-route-config

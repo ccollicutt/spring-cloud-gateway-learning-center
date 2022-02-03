@@ -10,9 +10,9 @@ Spring Cloud Gateway (SCG) is:
 
 It's an open source project which you can use to build an API gateway. SCG is used by thousands of development teams to handle their **production** API traffic. Built from the ground up for performance based on its non-blocking I/O design, it can handle load with low latency.
 
-## But, what is Spring Cloud Gateway for Kubernetes?
+## But...what is Spring Cloud Gateway for Kubernetes?
 
-The open source Spring Cloud Gateway project does not provide a Kubernetes Operator, Kubernetes Custom Resources, etc, instead Spring Cloud Gateway for Kubernetes (SCGK) is a commercial product available from [VMware Tanzu](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html). SCGK makes SCG Kubernetes native...it becomes part of the Kubernetes API and we can then configure SCG instances and their functionality just like any other Kubernetes object.
+The open source Spring Cloud Gateway project does not provide a Kubernetes Operator, Kubernetes Custom Resources, etc, instead Spring Cloud Gateway for Kubernetes (SCGK) is a **commercial product** available from [VMware Tanzu](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html). SCGK makes SCG Kubernetes native...it becomes part of the Kubernetes API and we can then configure SCG instances and their functionality just like any other Kubernetes object.
 
 >Spring Cloud Gateway for Kubernetes, based on the open source Spring Cloud Gateway project, is the API gateway solution that application developers love. Spring Cloud Gateway for Kubernetes handles cross-cutting concerns on behalf of API development teams, such as: Single Sign-On (SSO), access control, rate limiting, resiliency, security, and more. Accelerate API delivery using modern cloud native patterns, any programming language you choose for API development, and integration with your existing CI/CD pipeline strategy. - [Spring Cloud Gateway for Kubernetes Documentation](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html)
 
