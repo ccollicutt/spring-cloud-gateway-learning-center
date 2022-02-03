@@ -10,7 +10,7 @@ file: ~/demo/circuit-breaker.yaml
 
 Now apply the circuit breaker.
 
-```
+```execute-1
 kubectl apply -f ~/demo/circuit-breaker.yaml
 ```
 
@@ -40,11 +40,11 @@ Now let's configure a fallback URI.
 file: ~/demo/circuit-breaker-fallback.yaml
 ```
 
-Note that configuration will now forward any circuit breaks to "/fallback/get" and that route is configured to add a header and strip "/fallback" from the URI, which leads the request to end up at httpbin.org/get.
+Note the **new** configuration will now forward any circuit breaks to "/fallback/get" and that route is configured to add a header and strip "/fallback" from the URI, which leads the request to end up at httpbin.org/get.
 
 Apply that configuration.
 
-```
+```execute-1
 kubectl apply -f ~/demo/circuit-breaker-fallback.yaml
 ```
 
@@ -71,3 +71,4 @@ SNIP!
 }
 ```
 
+Here we've shown we can configure a circuit breaker, and as well include a fallback URL.

@@ -7,6 +7,8 @@ if [ "$(kubectl get workshops.learningcenter.tanzu.vmware.com 2>/dev/null | grep
   kubectl delete workshops.learningcenter.tanzu.vmware.com $OBJ
 fi
 
+OBJ="spring-cloud-gateway"
+
 echo "INFO: removing trainingportals..."
 if [ "$(kubectl get trainingportals.learningcenter.tanzu.vmware.com 2>/dev/null | grep $OBJ | wc -l)" -gt "0" ]; then
   kubectl delete trainingportals.learningcenter.tanzu.vmware.com $OBJ
