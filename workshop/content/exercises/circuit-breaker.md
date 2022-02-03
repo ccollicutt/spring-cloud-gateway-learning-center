@@ -24,13 +24,11 @@ We should see something like the below returned. The request timed out.
 
 ```
 {
-  "timestamp": "2022-02-03T21:31:48.348+00:00",
+SNIP!
   "path": "/breaker/delay/3",
   "status": 504,
   "error": "Gateway Timeout",
-  "message": "Did not observe any item or terminal signal within 1000ms in 'circuitBreaker' (and no fallback has been configured)",
-  "requestId": "bf0c3917-2",
-  "exception": "java.util.concurrent.TimeoutException"
+SNIP!
 }
 ```
 
