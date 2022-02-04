@@ -38,9 +38,16 @@ You can watch the logs or describe the various objects while you are waiting, ex
 kubectl wait --for=condition=Ready --timeout=180s pod/my-gateway-0 && kubectl logs -f my-gateway-0
 ```
 
-Once the gateway's ready status is true, move onto the next section.
+After a couple of minutes the logs should start displaying, and the SCG's status/Readiness should be True.
 
-Stop following the logs.
+```
+NAME                                             READY   REASON
+springcloudgateway.tanzu.vmware.com/my-gateway   True    Created
+```
+
+The gateway is now running and available.
+
+to stop following the logs.
 
 ```terminal:interrupt
 session: 2

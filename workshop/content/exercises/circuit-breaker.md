@@ -1,8 +1,10 @@
-Here we will configure a circuit breaker.
+> In a distributed environment, calls to remote resources and services can fail due to transient faults, such as slow network connections, timeouts, or the resources being overcommitted or temporarily unavailable...In these situations it might be pointless for an application to continually retry an operation that is unlikely to succeed, and instead the application should quickly accept that the operation has failed and handle this failure accordingly. - [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
-First, review the file. This configuration will send requests to the SCG/breaker to http://httpbin.org. We will use "/delay/3" to tell httpbin.org to delay the reply, and the SCG will "break the circuit" because httpbin.org hasn't replied soon enough.
+### Configure a Circuit Breaker
 
->NOTE: This has both the route config and mapping manifests in it.
+First, review the file. This configuration will send requests to "SCG/breaker" to http://httpbin.org. We will use "/delay/3" to tell httpbin.org to delay the reply, and due to the delay the SCG will "break the circuit" (because httpbin.org hasn't replied quickly enough).
+
+>NOTE: This file has both the route config and mapping manifests in it.
 
 ```editor:open-file
 file: ~/demo/circuit-breaker.yaml

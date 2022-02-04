@@ -25,7 +25,7 @@ kubectl get ingress
 Curl the ingress, including "/routed/get" for the SCG route.
 
 ```execute-1
-curl http://$SESSION_NAME-ingress.$INGRESS_DOMAIN/routed/get -H "hello: world"
+curl -s http://$SESSION_NAME-ingress.$INGRESS_DOMAIN/routed/get -H "hello: world" | jq
 ```
 
 You can also open that URL in the browser.

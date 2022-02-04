@@ -15,7 +15,7 @@ kubectl port-forward service/my-gateway-headless 8090:8090
 Now we can curl the actuator endpoints.
 
 ```execute-1
-curl localhost:8090/actuator/health
+curl -s localhost:8090/actuator/health | jq
 ```
 
 Example output:
@@ -27,25 +27,25 @@ Example output:
 Info:
 
 ```execute-1
-curl localhost:8090/actuator/info | jq
+curl -s localhost:8090/actuator/info | jq
 ```
 
 Routes:
 
 ```execute-1
-curl localhost:8090/actuator/gateway/routes | jq
+curl -s localhost:8090/actuator/gateway/routes | jq
 ```
 
 Global filters enabled and available in the gateway:
 
 ```execute-1
-curl localhost:8090/actuator/gateway/globalfilters | jq
+curl -s localhost:8090/actuator/gateway/globalfilters | jq
 ```
 
 Route filters enabled and available in the gateway:
 
 ```execute-1
-curl localhost:8090/actuator/gateway/routefilters | jq
+curl -s localhost:8090/actuator/gateway/routefilters | jq
 ```
 
 Stop the port fowarding:
