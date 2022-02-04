@@ -1,7 +1,7 @@
 apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
-  name: spring-cloud-gateway-for-kubernetes-staging
+  name: spring-cloud-gateway-for-kubernetes
 spec:
   title: Spring Cloud Gateway for Kubernetes
   description: A workshop for using Spring Cloud Gateway for Kubernetes
