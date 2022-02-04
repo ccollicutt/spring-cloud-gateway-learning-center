@@ -16,13 +16,13 @@ Now apply the circuit breaker.
 kubectl apply -f ~/demo/circuit-breaker.yaml
 ```
 
-And curl the endpoint.
+Curl the endpoint.
 
 ```execute-1
 curl -s $SESSION_NAME-ingress.$INGRESS_DOMAIN/breaker/delay/3 | jq
 ```
 
-We should see something like the below returned. The request timed out.
+We should see something like the below returned. According to the SCG the request timed out.
 
 ```
 {
@@ -40,8 +40,7 @@ Now let's configure a fallback URI.
 file: ~/demo/circuit-breaker-fallback.yaml
 ```
 
-Note the **new** configuration will now forward any circuit breaks to "/fallback/get" and that route is configured to add a header and strip "/fallback" from the URI, which leads the request to end up at httpbin.org/get.
-
+Note the **new** configuration will now forward any circuit breaks to "/fallback/get" and that fallback route is further configured to add a header and strip "/fallback" from the URI, which leads the request to end up at httpbin.org/get
 Apply that configuration.
 
 ```execute-1

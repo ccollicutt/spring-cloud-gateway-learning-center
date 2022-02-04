@@ -1,7 +1,7 @@
 apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: TrainingPortal
 metadata:
-  name: spring-cloud-gateway
+  name: spring-cloud-gateway-staging
 spec:
   portal:
     registration:
@@ -10,7 +10,7 @@ spec:
     updates:
       workshop: true
   workshops:
-  - name: spring-cloud-gateway-for-kubernetes
+  - name: spring-cloud-gateway-for-kubernetes-staging
     capacity: 5
     expires: 90m
     orphaned: 5m

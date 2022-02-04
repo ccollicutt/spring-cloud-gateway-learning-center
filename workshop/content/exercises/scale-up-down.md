@@ -52,18 +52,22 @@ kubectl get pods
 
 ## Vertical Scaling
 
-By default, the pods will have a request of:
+Not only can we scale out/horizontally by adding more pods, but we can also scale up the resources available to individual pods, ie. "scale vertically".
+
+By default, the pods will have Kubernetes request and limits of:
 
 |        | Request | Limit |
 |--------|---------|-------|
 | Memory | 256Mi   | 512Mi |
 | CPU    | 500m    | 2     |
 
+Let's check those now.
+
 ```execute-1
 kubectl describe pod my-gateway-0 | grep Limits -A 5
 ```
 
-We can update the configuration. In this 
+We can update the configuration.
 
 ```editor:append-lines-to-file
 file: ~/demo/my-gateway.yaml
