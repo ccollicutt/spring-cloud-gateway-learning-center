@@ -1,0 +1,22 @@
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayRouteConfig
+metadata:
+  name: sso-route
+spec:
+  routes:
+  - uri: https://github.com
+    ssoEnabled: true
+    predicates:
+      - Path=/github/**
+    filters:
+      - StripPrefix=1
+---
+apiVersion: "tanzu.vmware.com/v1"
+kind: SpringCloudGatewayMapping
+metadata:
+  name: sso-gateway-mapping
+spec:
+  gatewayRef:
+    name: my-gateway
+  routeConfigRef:
+    name: sso-route

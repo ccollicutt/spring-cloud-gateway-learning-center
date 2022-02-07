@@ -16,6 +16,8 @@ modules:
         name: Use a Circuit Breaker
     exercises/ingress:
         name: Configure an Ingress for the Gateway
+    exercises/sso:
+        name: Single Sign On
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

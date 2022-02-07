@@ -6,14 +6,14 @@ OBJ="spring-cloud-gateway-for-kubernetes-$DTAP"
 
 echo "INFO: removing workshops..."
 if ! kubectl get workshops.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
-  echo "kubectl delete workshops.learningcenter.tanzu.vmware.com $OBJ"
+  kubectl delete workshops.learningcenter.tanzu.vmware.com $OBJ
 fi
 
 OBJ="spring-cloud-gateway-$DTAP"
 
 echo "INFO: removing trainingportals..."
 if ! kubectl get trainingportals.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
-  echo "kubectl delete trainingportals.learningcenter.tanzu.vmware.com $OBJ"
+  kubectl delete trainingportals.learningcenter.tanzu.vmware.com $OBJ
 fi
 
 echo "INFO: checking namespace..."

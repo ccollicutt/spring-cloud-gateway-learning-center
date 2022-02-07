@@ -10,4 +10,5 @@ modules:
     - exercises/ingress
     - exercises/strangler-fig
     - exercises/circuit-breaker
+    - exercises/sso
     - workshop-summary
