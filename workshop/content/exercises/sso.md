@@ -12,7 +12,7 @@ text: |
 Enter into that file the information your instructure has provided to access an instance of Okta.
 
 ```terminal:execute
-command: $ kubectl create secret generic my-sso-credentials --from-env-file=~/demo/sso-credentials.txt
+command: cd; kubectl create secret generic my-sso-credentials --from-env-file=./demo/sso-credentials.txt
 ```
 
 Validate that secret.
@@ -26,8 +26,8 @@ Now we set the sso secret in the my-gateway defintion.
 ```editor:append-lines-to-file
 file: ~/demo/my-gateway.yaml
 text: |
-    sso:
-        secret: my-sso-credentials
+        sso:
+            secret: my-sso-credentials
 ```
 
 Apply that new configuration.
@@ -36,10 +36,23 @@ Apply that new configuration.
 command: kubectl apply -f ~/demo/my-gateway.yaml
 ```
 
-Open the route in the browser.
+As well, apply the new SSO route.
+
+```terminal:execute
+command: kubectl apply -f ~/demo/sso-route.yaml
+```
+
+Open the route in the browser. The instructor will provide a username and password for the Okta login.
+
+>NOTE: This will require you login via Okta, and will "proxy" github through the Spring Cloud Gateway once authenticated.
 
 ```dashboard:create-dashboard
 name: Example
-url: https://{{ session_namespace}}-ingress.{{ ingress_domain }}/github/spring-cloud/spring-cloud-gateway
+url: http://{{ session_namespace}}-ingress.{{ ingress_domain }}/github/spring-cloud/spring-cloud-gateway
 ```
 
+Or copy and place the URL into your browser yourself.
+
+```copy
+http://{{ session_namespace}}-ingress.{{ ingress_domain }}/github/spring-cloud/spring-cloud-gateway
+```

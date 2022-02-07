@@ -1,28 +1,28 @@
 #!/bin/bash
 
-DTAP="staging"
+# DTAP="staging"
 
-OBJ="spring-cloud-gateway-for-kubernetes-$DTAP"
+# OBJ="spring-cloud-gateway-for-kubernetes-$DTAP"
 
-echo "INFO: removing workshops..."
-if ! kubectl get workshops.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
-  kubectl delete workshops.learningcenter.tanzu.vmware.com $OBJ
-fi
+# echo "INFO: removing workshops..."
+# if kubectl get workshops.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
+#   kubectl delete workshops.learningcenter.tanzu.vmware.com $OBJ
+# fi
 
-OBJ="spring-cloud-gateway-$DTAP"
+# OBJ="spring-cloud-gateway-$DTAP"
 
-echo "INFO: removing trainingportals..."
-if ! kubectl get trainingportals.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
-  kubectl delete trainingportals.learningcenter.tanzu.vmware.com $OBJ
-fi
+# echo "INFO: removing trainingportals..."
+# if kubectl get trainingportals.learningcenter.tanzu.vmware.com $OBJ 2>/dev/null; then
+#   kubectl delete trainingportals.learningcenter.tanzu.vmware.com $OBJ
+# fi
 
-echo "INFO: checking namespace..."
-until ! kubectl get ns $OBJ-ui 2>/dev/null; do
-  echo "sleeping waiting for ns to delete"
-  sleep 2
-done
+# echo "INFO: checking namespace..."
+# until ! kubectl get ns $OBJ-ui 2>/dev/null; do
+#   echo "sleeping waiting for ns to delete"
+#   sleep 2
+# done
 
-echo "INFO: creating $OBJ environment"
+# echo "INFO: creating $OBJ environment"
 
 BASE_URL="https://raw.githubusercontent.com/ccollicutt/spring-cloud-gateway-learning-center/main/resources/"
 
