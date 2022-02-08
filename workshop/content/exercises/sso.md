@@ -46,13 +46,6 @@ Open the route in the browser. The instructor will provide a username and passwo
 
 >NOTE: This will require you login via Okta, and will "proxy" github through the Spring Cloud Gateway once authenticated.
 
-```dashboard:create-dashboard
-name: Example
-url: http://{{ session_namespace}}-ingress.{{ ingress_domain }}/github/spring-cloud/spring-cloud-gateway
-```
+Now, open the URL into your browser yourself.
 
-Or copy and place the URL into your browser yourself.
-
-```copy
 http://{{ session_namespace}}-ingress.{{ ingress_domain }}/github/spring-cloud/spring-cloud-gateway
-```

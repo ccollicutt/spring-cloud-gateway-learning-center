@@ -20,6 +20,8 @@ The open source Spring Cloud Gateway project does not provide a Kubernetes Opera
 
 With SCGK, the capabilities of Spring Cloud Gateway become part of the Kubernetes API. Using SCGK, which includes a Kubernetes operator, we can extend the Kubernetes API so that it understands how to configure Spring Cloud Gateways, as well as manage the lifecycle of service instances of SCG.
 
+![SCG4K8S](images/scg2.jpg)
+
 Examples of what the commercial SCGK provides:
 
 * Kubernetes operator with custom resource definitions (CRDs)

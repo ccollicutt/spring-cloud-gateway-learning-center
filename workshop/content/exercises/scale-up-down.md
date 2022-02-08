@@ -1,5 +1,9 @@
 ### Horizontal Scaling
 
+In this section we'll add a second pod that makes up the SCG service.
+
+![scale up](images/scale1.jpg)
+
 First, let's review the gateway manifest.
 
 ```execute-1
