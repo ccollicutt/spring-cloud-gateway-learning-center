@@ -1,10 +1,16 @@
-Spring Cloud Gateway configures actuators for itself:
+Spring Cloud Gateway configures actuators for itself.
+
+![route and mapping diagram](images/actuators1.jpg)
+
+
+The actuator URLs available are:
 
 * /actuator/info - display version and other Gateway instance information
 * /actuator/health - displays Gateway instance health indicator as status value UP or DOWN
 * /actuator/gateway/routes - retrieve list of all API routes currently available on Gateway instance
 * /actuator/gateway/globalfilters - retrieve list of global filters enabled on Gateway instance
 * /actuator/gateway/routefilters - retrieve list of route filters available on Gateway instance
+
 
 First, forward to port 8090 on the headless service component.
 

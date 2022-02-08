@@ -1,3 +1,7 @@
+In this section we'll add a route and mapping to the existing gateway. That route will be configured to send traffic directed at scg/routed to httpbin.org.
+
+![route and mapping diagram](images/route-mapping1.jpg)
+
 ### Create a Route
 
 Inspect the file demo/route-config.yaml it contains gateway configuration CRD that proxies requests set the gateway to github. Notice that this route configuration is generic.

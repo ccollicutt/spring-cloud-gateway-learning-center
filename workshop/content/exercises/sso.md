@@ -1,4 +1,9 @@
+![circuit breaker](images/sso1.jpg)
+
+
 First, we'll create a file that contains the variables necessary to setup single sign on.
+
+>NOTE: The instructor will provide the information required to fill out the variables in this file.
 
 ```editor:append-lines-to-file
 file: ~/demo/sso-credentials.txt
