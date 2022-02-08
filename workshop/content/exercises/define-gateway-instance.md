@@ -1,4 +1,8 @@
-To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session.
+To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session. We'll use the Kubernetes API to instantiate an image.
+
+![SCG4K8S](images/define-scg1.jpg)
+
+No SpringCloudGateway, no pods, no persistent volume claims.
 
 ```execute-1
 kubectl get scg,statefulsets,pods,pvc
