@@ -4,6 +4,9 @@ In this section we'll add a second pod that makes up the SCG service.
 
 ![scale up](images/scale1.jpg)
 
+
+#### Scale Up
+
 First, let's review the gateway manifest.
 
 ```execute-1
@@ -41,6 +44,10 @@ Get the pods again.
 ```execute-1
 kubectl get pods
 ```
+
+At this point we have two pods running that make up the SCG instance and requests will be load balanced between them.
+
+#### Scale Down
 
 Now, scale back down to one.
 

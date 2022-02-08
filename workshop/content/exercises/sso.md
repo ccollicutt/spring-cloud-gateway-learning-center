@@ -49,7 +49,9 @@ command: kubectl apply -f ~/demo/sso-route.yaml
 
 Open the route in the browser. The instructor will provide a username and password for the Okta login.
 
->NOTE: This will require you login via Okta, and will "proxy" github through the Spring Cloud Gateway once authenticated.
+>NOTE: This will require you login via Okta, and will "proxy" github through the Spring Cloud Gateway once authenticated. Look at the URL in the browser bar, it will be your ingress URL, not github.com.
+
+>NOTE: If you get "unhealthy upstream" simply wait a minute or two.
 
 Now, open the URL into your browser yourself.
 

@@ -63,7 +63,7 @@ Now we can start to connect to the gateway instance which will route to the exte
 First, let's try something that will fail.
 
 ```execute-1
-curl localhost:8080/get
+curl localhost:8080/get | jq
 ```
 
 That should fail with a 404, which makes sense because the gateway doesn't have a route for "/get".
@@ -73,7 +73,7 @@ Next, let's use "/routed" which according to the rule should send the request to
 Below I'm setting the headers "hello:world" and httpbin will return those same headers in the response.
 
 ```execute-1
-curl localhost:8080/routed/get -H "hello: world"
+curl localhost:8080/routed/get -H "hello: world" | jq
 ```
 
 Note how the response should include the added headers.

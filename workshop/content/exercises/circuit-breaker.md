@@ -9,6 +9,8 @@ First, review the file. This configuration will send requests to "SCG/breaker" t
 
 >NOTE: This file has both the route config and mapping manifests in it.
 
+>NOTE: In this example we are using an external service, httpbin.org, to be the routed API, but of course it could be an internally hosted API or microservice.
+
 ```editor:open-file
 file: ~/demo/circuit-breaker.yaml
 ```

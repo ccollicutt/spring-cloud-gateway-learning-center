@@ -8,6 +8,8 @@ Spring Cloud Gateway (SCG) is:
 
 >...an API Gateway built on top of the Spring Ecosystem, including: Spring 5, Spring Boot 2 and Project Reactor. Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting concerns to them such as: security, monitoring/metrics, and resiliency. - [Spring Cloud Gateway Reference](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
 
+![SCG4K8S](images/scg3.jpg)
+
 It's an open source project which you can use to build an API gateway. SCG is used by thousands of development teams to handle their **production** API traffic. Built from the ground up for performance based on its non-blocking I/O design, it can handle load with low latency.
 
 ## But...what is Spring Cloud Gateway for Kubernetes?

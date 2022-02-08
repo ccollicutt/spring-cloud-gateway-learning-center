@@ -1,8 +1,13 @@
-To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session. We'll use the Kubernetes API to instantiate an image.
+We start out with an empty namespace. We have not created anything in this namespace, and our goal for the first section is to create an instance of Spring Cloud Gateway. The way we will do this is by asking Kubernetes to do it for us by using the Kubernetes API, and the "Custom Resource Defitions" that have been added to the Kubernetes cluster when SCG4K8S was installed.
+
+
+### Validate the Namespace is Empty
+
+To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session. Once we apply the Kubernetes manifest, the SCG4K8S operator will build one for us. That way the entire life cycle of the SCG instances will be manged for us!
 
 ![SCG4K8S](images/define-scg1.jpg)
 
-No SpringCloudGateway, no pods, no persistent volume claims.
+No SpringCloudGateway, no pods, no persistent volume claims exist (yet).
 
 ```execute-1
 kubectl get scg,statefulsets,pods,pvc
@@ -12,15 +17,15 @@ The above command should return no resources.
 
 ### Create a Gateway Service Instance
 
-Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a spring cloud gateway instance.
+Inspect the demo/my-gateway.yaml file it contains the YAML shown below which defines a Spring Cloud Gateway instance.
 
->NOTE: This will open in the editor.
+>NOTE: This will open in the online editor that is part of this workshop.
 
 ```editor:open-file
 file: ~/demo/my-gateway.yaml
 ```
 
-Execute the below command which will submit a request to the cluster to deploy an instance of spring cloud gateway.
+Execute the below command which will submit a request to the cluster to deploy an instance of Spring Cloud Gateway.
 
 ```execute-1
 kubectl apply -f demo/my-gateway.yaml 
@@ -28,7 +33,7 @@ kubectl apply -f demo/my-gateway.yaml
 
 >NOTE: It can take a few minutes for the gateway to initially come up.
 
-You should see a pod of the spring cloud gateway running or being launched in the cluster's default namespace as shown in the output below.
+You should see a pod of the spring cloud gateway running or being launched in the cluster's default namespace as shown in the output below. Now the namespace is no longer empty and has a few Kubernetes objects being created.
 
 ```execute-1
 kubectl get scg,statefulsets,pods,pvc
