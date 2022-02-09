@@ -1,5 +1,6 @@
 We start out with an empty namespace. We have not created anything in this namespace, and our goal for the first section is to create an instance of Spring Cloud Gateway. The way we will do this is by asking Kubernetes to do it for us by using the Kubernetes API, and the "Custom Resource Defitions" that have been added to the Kubernetes cluster when SCG4K8S was installed.
 
+We could have as many SCG instances as makes sense for our organization, we are not limited to a single instance. For the purposes of this workshop, each user will create a single SCG instance.
 
 ### Validate the Namespace is Empty
 
@@ -14,6 +15,10 @@ kubectl get scg,statefulsets,pods,pvc
 ```
 
 The above command should return no resources.
+
+```
+No resources found in <your namespace> namespace.
+```
 
 ### Create a Gateway Service Instance
 

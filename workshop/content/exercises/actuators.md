@@ -1,7 +1,6 @@
-Spring Cloud Gateway configures actuators for itself.
+Spring Cloud Gateway makes provides actuator endpoints which provide several out-of-the-box services for monitoring and information.
 
 ![route and mapping diagram](images/actuators1.jpg)
-
 
 The actuator URLs available are:
 

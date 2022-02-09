@@ -1,7 +1,10 @@
-To provide external access to the Spring Cloud Gateway instance, we need to configure some form of "ingress", either a true Kubernetes Ingress, or something like HTTPProxy provided by [Contour](https://projectcontour.io/) for example.
+One of the biggest problems people run into when using Kubernetes is how to get traffic into their applications.
+
+To provide external access to the Spring Cloud Gateway instance, we need to configure some form of "ingress", either a true Kubernetes Ingress, or something like HTTPProxy provided by [Contour](https://projectcontour.io/), for example.
+
+In this section we'll setup an Ingress definition for the SCG we have created so that it is available outside of the Kubernetes cluster.
 
 ![ingress diagram](images/ingress1.jpg)
-
 
 First, review the ingress manifest.
 

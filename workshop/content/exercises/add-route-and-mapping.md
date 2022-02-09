@@ -1,4 +1,6 @@
-In this section we'll add a route and mapping to the existing gateway. That route will be configured to send traffic directed at scg/routed to httpbin.org.
+In order to configure SCG to manage a microservice or API, we have to tell it what routes to manage. We do that by creating a route and then mapping that route to a particular Spring Cloud Gateway. Once the route and mapping are configured, the particular SCG instance will then direct requests to those routes to a particular service, and also apply configured filters and such to the routes.
+
+In this section we'll add a route and mapping to the existing gateway. That route will be configured to send traffic directed at sct/routed to httpbin.org.
 
 ![route and mapping diagram](images/route-mapping1.jpg)
 
