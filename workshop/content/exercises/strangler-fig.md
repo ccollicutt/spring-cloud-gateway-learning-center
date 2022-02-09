@@ -1,24 +1,6 @@
-### Route Predicates
 
-SCG has a feature called [route predicates](https://cloud.spring.io/spring-cloud-gateway/reference/html/#gateway-request-predicates-factories).
 
-Examples of ways to implement route predicates:
-
-* After (time)
-* Before (time)
-* Between (time)
-* Cookie 
-* Header 
-* Host 
-* Method 
-* Path 
-* Query 
-* RemoteAddr 
-* Weight
-
-These route predicates allow us to manage the traffic going to the various APIs managed by the SCG. We'll use weights to manage API resources.
-
-### Background
+![strangler fig pattern - weighted routes](images/strangler-fig1.jpg)
 
 For the purposes of this section, let's assume Acme Co. has a monolithic application that exposes an API and they want to incrementally break apart this monolithic app following the [strangler fig](https://martinfowler.com/bliki/StranglerFigApplication.html) pattern. 
 

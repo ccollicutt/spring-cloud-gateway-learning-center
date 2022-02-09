@@ -2,6 +2,7 @@
 
 ![circuit breaker](images/circuit-breaker1.jpg)
 
+In this section we'l configure a circuit breaker, and then add a fallback to that circuit breaker.
 
 ### Configure a Circuit Breaker
 

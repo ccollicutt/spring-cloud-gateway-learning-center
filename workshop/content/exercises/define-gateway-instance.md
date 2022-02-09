@@ -1,12 +1,12 @@
-We start out with an empty namespace. We have not created anything in this namespace, and our goal for the first section is to create an instance of Spring Cloud Gateway. The way we will do this is by asking Kubernetes to do it for us by using the Kubernetes API, and the "Custom Resource Defitions" that have been added to the Kubernetes cluster when SCG4K8S was installed.
+We start out with an empty namespace. We have not created anything in this namespace, and our goal for the first section is to create an instance of Spring Cloud Gateway. The way we will do this is by asking Kubernetes to do it for us by using the "Custom Resource Definitions" that have been added to the Kubernetes cluster when Spring Cloud Gateway for Kubernets (SCG4K8S) was installed.
 
-We could have as many SCG instances as makes sense for our organization, we are not limited to a single instance. For the purposes of this workshop, each user will create a single SCG instance.
+We could have as many Spring Cloud Gateway (SCG) instances as makes sense for our organization. We are not limited to a single instance. For the purposes of this workshop, each user will create a single SCG instance.
+
+![SCG4K8S](images/define-scg1.jpg)
 
 ### Validate the Namespace is Empty
 
-To start, there will be no springcloudgateways (scg), pods, or stateful sets in the session. Once we apply the Kubernetes manifest, the SCG4K8S operator will build one for us. That way the entire life cycle of the SCG instances will be manged for us!
-
-![SCG4K8S](images/define-scg1.jpg)
+To start, there will be no springcloudgateways, pods, or stateful sets in the namespace. However, once we apply the Kubernetes manifest, the SCG4K8S operator will build one for us. That way the entire life cycle of the SCG instances will be manged for us!
 
 No SpringCloudGateway, no pods, no persistent volume claims exist (yet).
 
