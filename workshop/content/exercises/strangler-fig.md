@@ -43,6 +43,20 @@ Curl the "legacy" app. If we curl /api, then we should only see "legacy".
 while true; do curl $SESSION_NAME-ingress.$INGRESS_DOMAIN/api/; sleep 2; done
 ```
 
+Expected output:
+
+```
+legacy
+legacy
+legacy
+legacy
+legacy
+legacy
+legacy
+legacy
+SNIP!
+```
+
 Let that session run for a bit to review the output, then stop it.
 
 ```terminal:interrupt
@@ -57,6 +71,20 @@ About 10% of the traffic will now go to "microservice", the new microservice.
 
 ```execute-2
 while true; do curl $SESSION_NAME-ingress.$INGRESS_DOMAIN/api/catalog; sleep 2; done
+```
+
+Expected output:
+
+```
+legacy
+legacy
+microservice
+legacy
+legacy
+legacy
+legacy
+legacy
+SNIP!
 ```
 
 Now stop that curl.

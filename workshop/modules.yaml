@@ -1,6 +1,21 @@
 modules:
     workshop-overview:
         name: Workshop Overview
+        exit_sign: API Gateway Overview
+    api-gateway-overview:
+        name: API Gateway Overview
+        exit_sign: Spring Cloud Gateway Open Source Software
+    scg-oss:
+        name: Spring Cloud Gateway Open Source Software
+        exit_sign: Spring Cloud Gateway Commercial
+    scg-commerical:
+        name: Spring Cloud Gateway Commercial
+        exit_sign: Spring Cloud Gateway for Kubernetes
+    scg-k8s:
+        name: Spring Cloud Gateway for Kubernetes
+        exit_sign: Routes and predicates
+    routes-and-predicates:
+        name: Routes and Predicates
         exit_sign: Start Using Spring Cloud Gateway
     exercises/define-gateway-instance:
         name: Define a Gateway Instance

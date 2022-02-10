@@ -4,7 +4,9 @@ To provide external access to the Spring Cloud Gateway instance, we need to conf
 
 In this section we'll setup an Ingress definition for the SCG we have created so that it is available outside of the Kubernetes cluster.
 
-![ingress diagram](images/ingress1.jpg)
+### Create an Ingress for the Gateway
+
+![Configure an Ingress object for an SCG instance](images/ingress1.jpg)
 
 First, review the ingress manifest.
 

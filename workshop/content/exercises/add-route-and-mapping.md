@@ -2,7 +2,7 @@ In order to configure SCG to manage a microservice or API, we have to tell it wh
 
 In this section we'll add a route and mapping to the existing gateway. That route will be configured to send traffic directed at "scg/routed" to httpbin.org.
 
-![route and mapping diagram](images/route-mapping1.jpg)
+![Create a route and map it to a SCG instance](images/route-mapping1.jpg)
 
 ### Create a Route
 
@@ -65,7 +65,7 @@ Now we can start to connect to the gateway instance which will route to the exte
 First, let's try something that will fail.
 
 ```execute-1
-curl localhost:8080/get | jq
+curl -s localhost:8080/get | jq
 ```
 
 That should fail with a 404, which makes sense because the gateway doesn't have a route for "/get".
@@ -75,7 +75,7 @@ Next, let's use "/routed" which according to the rule should send the request to
 Below I'm setting the headers "hello:world" and httpbin will return those same headers in the response.
 
 ```execute-1
-curl localhost:8080/routed/get -H "hello: world" | jq
+curl -s localhost:8080/routed/get -H "hello: world" | jq
 ```
 
 Note how the response should include the added headers.
@@ -84,11 +84,11 @@ Example output (some output removed for brevity):
 
 ```
 $ curl localhost:8080/routed/get -H "hello: world"
-SNIP
+SNIP!
     "Forwarded": "proto=http;host=\"localhost:8080\";for=\"127.0.0.1:45948\"", 
     "Hello": "world", 
     "Host": "httpbin.org", 
-SNIP
+SNIP!
 }
 ```
 

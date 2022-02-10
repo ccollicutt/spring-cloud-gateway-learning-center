@@ -1,4 +1,4 @@
-![circuit breaker](images/sso1.jpg)
+![Overview of single sign on](images/sso1.jpg)
 
 
 First, we'll create a file that contains the variables necessary to setup single sign on.
@@ -30,16 +30,23 @@ Now we set the sso secret in the my-gateway defintion.
 
 ```editor:append-lines-to-file
 file: ~/demo/my-gateway.yaml
-text: |
+text: |4
         sso:
             secret: my-sso-credentials
 ```
 
 Apply that new configuration.
 
+>NOTE: The pod will restart!
+
 ```terminal:execute
 command: kubectl apply -f ~/demo/my-gateway.yaml
 ```
+
+Wait for the SCG object to become ready.
+
+```terminal:execute
+while true; do 
 
 As well, apply the new SSO route.
 

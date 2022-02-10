@@ -1,6 +1,6 @@
 Spring Cloud Gateway makes provides actuator endpoints which provide several out-of-the-box services for monitoring and information.
 
-![route and mapping diagram](images/actuators1.jpg)
+![SCG Actuators](images/actuators1.jpg)
 
 The actuator URLs available are:
 

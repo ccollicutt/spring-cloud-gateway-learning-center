@@ -7,7 +7,7 @@ Depending on the amount and type of traffic that the SCG instance receives, or i
 
 In this section we'll add a second pod that makes up the SCG service.
 
-![scale up](images/scale1.jpg)
+![Scale out the SCG by adding replicas](images/scale1.jpg)
 
 
 #### Add More Replicas

@@ -2,7 +2,7 @@ We start out with an empty namespace. We have not created anything in this names
 
 We could have as many Spring Cloud Gateway (SCG) instances as makes sense for our organization. We are not limited to a single instance. For the purposes of this workshop, each user will create a single SCG instance.
 
-![SCG4K8S](images/define-scg1.jpg)
+![Creating an SCG instance via kubectl](images/define-scg1.jpg)
 
 ### Validate the Namespace is Empty
 
