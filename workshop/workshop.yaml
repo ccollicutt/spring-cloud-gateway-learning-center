@@ -7,14 +7,14 @@ modules:
     - scg-oss
     - scg-commercial
     - scg-k8s
-    - routes-and-predicates
+   #  - routes-and-predicates
     - exercises/define-gateway-instance
     - exercises/scale-up-down
     - exercises/add-route-and-mapping
     - exercises/actuators    
     - exercises/strangler-fig
     - exercises/circuit-breaker
- #   - exercises/rate-limiting
+   #  - exercises/rate-limiting
     - exercises/ingress
     - exercises/sso
     # - exercises/rbac
