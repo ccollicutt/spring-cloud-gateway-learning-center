@@ -12,8 +12,14 @@ modules:
     - exercises/scale-up-down
     - exercises/add-route-and-mapping
     - exercises/actuators    
-    - exercises/ingress
     - exercises/strangler-fig
     - exercises/circuit-breaker
+ #   - exercises/rate-limiting
+    - exercises/ingress
     - exercises/sso
+    # - exercises/rbac
+    # - exercises/scopes-authorization
+    # - exercises/authorized-token-relay
+    # - exercises/client-certificate-authorization
+    # - exercises/api-portal
     - workshop-summary

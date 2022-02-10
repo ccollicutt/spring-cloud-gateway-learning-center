@@ -1,10 +1,12 @@
 Spring Cloud Gateway OSS is a library that application developers can use to create *their own* API gateway solution. They'll have to add in all the other pieces needed to operationalize an API gateway in order to put it into production. Plus they'll have to maintain this solution over time, as well as manage it's lifecycle.
 
-### Commerical Features
+### Spring Cloud Gateway Commercial
 
-![SCG in a Kubernetes cluster, including Ingress](images/scg2.jpg)
+The commerical version of SCG includes the ability to deploy to the Tanzu Application Service or Kubernetes, and is based on the OSS version but adds commercial features and platform support.
 
-Additional examples of features the commercial SCGK provides:
+![SCG commercial offerings](images/scg-comm1.jpg)
+
+### Examples of Features the SCG Commercial Provides
 
 * Kubernetes operator with custom resource definitions (CRDs)
 * Commercial API route filters for SSO authentication, role-based access control, scopes authorization, authorized token relay, client certificate authorization, rate limiting and circuit breaker

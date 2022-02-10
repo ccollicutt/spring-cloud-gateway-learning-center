@@ -18,21 +18,33 @@ modules:
         name: Routes and Predicates
         exit_sign: Start Using Spring Cloud Gateway
     exercises/define-gateway-instance:
-        name: Define a Gateway Instance
+        name: Create a Gateway Instance
     exercises/scale-up-down:
-        name: Scale Gateway Instances Up and Down
-    exercises/add-route-and-mapping:
-        name: Add a Route and Mapping to a Gateway
+        name: Scale Gateway Instances
     exercises/actuators:
         name: Spring Cloud Gateway Service Instance Actuators
+    exercises/add-route-and-mapping:
+        name: Add a Route and Mapping to a Gateway
     exercises/strangler-fig:
         name: Use the Strangler Fig Pattern
     exercises/circuit-breaker:
         name: Use a Circuit Breaker
+    # exercises/rate-limiting:
+    #     name: Rate Limiting
     exercises/ingress:
         name: Configure an Ingress for the Gateway
     exercises/sso:
         name: Single Sign On
+    # exercises/rbac:
+    #     name: Role Based Access Control
+    # exercises/scopes-authorization:
+    #     name: Scopes Authorization
+    # exercises/authorized-token-relay:
+    #     name: Authorized Token Relay
+    # exercises/client-certificate-authorization:
+    #     name: Client Certificate Authorization
+    # exercises/api-portal:
+    #     name: API Portal
     workshop-summary:
         name: Workshop Summary
         exit_sign: Finish Workshop

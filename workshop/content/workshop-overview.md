@@ -1,8 +1,6 @@
-# Spring Cloud Gateway for Kubernetes
+This workshop is a guided tutorial for experimenting with [VMware Spring Cloud Gateway for Kubernetes (SCGK)](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html).
 
-A guided tutorial for experimenting with [VMware Spring Cloud Gateway for Kubernetes (SCGK)](https://docs.vmware.com/en/VMware-Spring-Cloud-Gateway-for-Kubernetes/index.html).
-
-This workshop provides an overview Spring Cloud Gateway for Kubernetes, as well as the opportunity to go hands on with the product in a Kubernetes environment.
+This workshop provides an overview Spring Cloud Gateway for Kubernetes, as well as the opportunity to go **hands on** with the product in a Kubernetes environment.
 
 This workshop covers the topics listed below and more.
 
