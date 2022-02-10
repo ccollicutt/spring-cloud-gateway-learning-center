@@ -8,7 +8,7 @@ modules:
     scg-oss:
         name: Spring Cloud Gateway Open Source Software
         exit_sign: Spring Cloud Gateway Commercial
-    scg-commerical:
+    scg-commercial:
         name: Spring Cloud Gateway Commercial
         exit_sign: Spring Cloud Gateway for Kubernetes
     scg-k8s:
