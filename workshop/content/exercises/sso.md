@@ -45,9 +45,6 @@ command: kubectl apply -f ~/demo/my-gateway.yaml
 
 Wait for the SCG object to become ready.
 
-```terminal:execute
-while true; do 
-
 As well, apply the new SSO route.
 
 ```terminal:execute

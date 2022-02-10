@@ -10,8 +10,8 @@ modules:
    #  - routes-and-predicates
     - exercises/define-gateway-instance
     - exercises/scale-up-down
+    - exercises/actuators   
     - exercises/add-route-and-mapping
-    - exercises/actuators    
     - exercises/strangler-fig
     - exercises/circuit-breaker
    #  - exercises/rate-limiting
