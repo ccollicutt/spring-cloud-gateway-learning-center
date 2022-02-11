@@ -23,10 +23,10 @@ modules:
         name: Scale Gateway Instances
     exercises/actuators:
         name: Spring Cloud Gateway Service Instance Actuators
-    exercises/add-route-and-mapping:
-        name: Add a Route and Mapping to a Gateway
     exercises/ingress:
         name: Configure an Ingress for the Gateway
+    exercises/add-route-and-mapping:
+        name: Add a Route and Mapping to a Gateway
     exercises/strangler-fig:
         name: Use the Strangler Fig Pattern
     exercises/circuit-breaker:

@@ -4,7 +4,7 @@ Spring Cloud Gateway (SCG) is:
 
 ![Overview of an API Gateway](images/scg3.jpg)
 
-It's an open source project which you can use to build your own API gateway. SCG is used by thousands of development teams to handle their **production** API traffic. Built from the ground up for performance based on its non-blocking I/O design, it can handle load with low latency.
+It's an open source project which you can use to **build your own API gateway** by writing, building, and running a Java application. SCG is used by thousands of development teams to handle productio API traffic. Built from the ground up for performance based on its non-blocking I/O design, it can handle load with low latency.
 
 ### How it Works
 
