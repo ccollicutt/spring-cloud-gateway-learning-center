@@ -10,12 +10,12 @@ modules:
    #  - routes-and-predicates
     - exercises/define-gateway-instance
     - exercises/scale-up-down
-    - exercises/actuators   
+    - exercises/actuators
+    - exercises/ingress   
     - exercises/add-route-and-mapping
     - exercises/strangler-fig
     - exercises/circuit-breaker
    #  - exercises/rate-limiting
-    - exercises/ingress
     - exercises/sso
     # - exercises/rbac
     # - exercises/scopes-authorization

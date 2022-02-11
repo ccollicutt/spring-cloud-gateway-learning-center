@@ -1,4 +1,15 @@
-![A few of the things and API gateway can do](images/api-gw1.jpg)
+![I want to build a microservice](images/api-gw2.jpg)
+
+Let's make this statement:
+
+>As a developer I want to build a microservice as easily as possible.
+
+To do that I need to:
+
+* build business logic
+* apply cross cutting concerns
+
+But how? One way is to use the Spring Cloud Gateway, which is a developer friendly environment.
 
 ### Why do we need API gateways?
 
@@ -7,6 +18,8 @@ In a microservices architecture, there are multiple types of frontend clients co
 Questions arise. How do we minimize the number of client requests to the backend? How do we secure requests for services that may have been originally designed for a different type of client?
 
 ### API gateway pattern
+
+![A few of the things and API gateway can do](images/api-gw1.jpg)
 
 In many microservices implementations public services are exposed to clients through an API gateway. Internal microservice endpoints are not exposed to external clients, instead they are kept private. There are a number of reasons for this approach:
 
@@ -26,3 +39,13 @@ The API gateway offers client-specific APIs (e.g. mobile, tablet, etc.) with pro
 * The number of requests/round-trips is reduced
 * It simplifies the client implementation by moving the aggregation logic into the API gateway
 * Allows centralization of cross-cutting concerns
+
+### Some Issues Developers Tell Us About Traditional API Gateways
+
+* Hard to deliver many micro-gateways, e.g. per business application
+* Difficult version control for fast moving code/developers
+* Difficult 'self-service' developer model 
+* Developers typically don't want to touch API gateway configuration, often due to IT ticket fatigue
+* Hard to integrate into the Software Development Life Cycle
+* Complex to implement a federated micro-api strategy, as opposed to a centralized model
+* Challenging to relegate certain central GW functions to downstream micro-gateways
