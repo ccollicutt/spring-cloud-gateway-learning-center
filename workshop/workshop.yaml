@@ -11,8 +11,8 @@ modules:
     - exercises/define-gateway-instance
     - exercises/scale-up-down
     - exercises/actuators
-    - exercises/ingress   
     - exercises/add-route-and-mapping
+    - exercises/ingress   
     - exercises/strangler-fig
     - exercises/circuit-breaker
    #  - exercises/rate-limiting
