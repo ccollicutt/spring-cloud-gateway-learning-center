@@ -1,6 +1,6 @@
 Spring Cloud Gateway OSS is a library that application developers can use to create *their own* API gateway solution. They'll have to add in all the other pieces needed to operationalize an API gateway in order to put it into production. Plus they'll have to maintain this solution over time, as well as manage it's lifecycle.
 
-**Most developers and organizations don't want to build and manage their own API gateway, but like Spring Cloud Gateway, it's power and developer-focus.**
+**Most developers and organizations don't want to build and manage their own API gateway, but like Spring Cloud Gateway's power and developer-focus. This is why Spring Cloud Gateway Commercial exists.**
 
 ### Spring Cloud Gateway Commercial
 

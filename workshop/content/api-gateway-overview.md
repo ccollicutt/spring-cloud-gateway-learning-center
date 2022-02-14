@@ -6,10 +6,10 @@ Let's make this statement:
 
 To do that I need to:
 
-* build business logic
-* apply cross cutting concerns
+1. build business logic
+2. apply cross cutting concerns
 
-But how? One way is to use the Spring Cloud Gateway, which is a developer friendly environment.
+But how to easily deal with the second need? One way is to use the Spring Cloud Gateway, which is a developer friendly environment.
 
 ### Why do we need API gateways?
 
