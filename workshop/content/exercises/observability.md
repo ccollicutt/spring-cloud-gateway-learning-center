@@ -15,7 +15,7 @@ text: |
 Create that secret.
 
 ```terminal:execute
-command: kubectl create -f ~/wavefront-secret.yaml
+command: kubectl create -f ~/demo/wavefront-secret.yaml
 ```
 
 Validate that secret.
@@ -31,17 +31,17 @@ file: ~/demo/my-gateway.yaml
 text: |2
     observability:
         metrics:
-        wavefront:
+            wavefront:
             enabled: true
         wavefront:
-        secret: metrics-wavefront-secret
-        source: {{ session_namespace }}
+            secret: metrics-wavefront-secret
+            source: {{ session_namespace }}
 ```
 
 >NOTE: We are recreating the gateway. It will take a few minutes to redeploy.
 
 ```terminal:execute
-command: kubectl replace ~/demo/my-gateway.yaml
+command: kubectl delete scg my-gateway && kubectl create -f ~/demo/my-gateway.yaml
 ```
 
 Use the session namespace to find the source in Tanzu Observability.
