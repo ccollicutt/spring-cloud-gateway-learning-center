@@ -35,7 +35,7 @@ modules:
     #     name: Rate Limiting
     exercises/sso:
         name: Single Sign On
-    exercises/observabiltiy:
+    exercises/observability:
         name: Observability
     # exercises/rbac:
     #     name: Role Based Access Control
