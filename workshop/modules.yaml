@@ -36,7 +36,7 @@ modules:
     exercises/sso:
         name: Single Sign On
     exercises/observability:
-        name: Observability
+        name: Tanzu Observability
     # exercises/rbac:
     #     name: Role Based Access Control
     # exercises/scopes-authorization:
