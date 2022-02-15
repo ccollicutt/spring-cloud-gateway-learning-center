@@ -32,7 +32,7 @@ text: |2
     observability:
         metrics:
             wavefront:
-            enabled: true
+                enabled: true
         wavefront:
             secret: metrics-wavefront-secret
             source: {{ session_namespace }}
