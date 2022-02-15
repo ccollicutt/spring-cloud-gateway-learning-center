@@ -31,8 +31,8 @@ Now we set the sso secret in the my-gateway defintion.
 ```editor:append-lines-to-file
 file: ~/demo/my-gateway.yaml
 text: |2
-        sso:
-            secret: my-sso-credentials
+    sso:
+        secret: my-sso-credentials
 ```
 
 Apply that new configuration.

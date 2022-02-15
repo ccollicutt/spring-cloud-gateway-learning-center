@@ -7,7 +7,7 @@ modules:
     - scg-oss
     - scg-commercial
     - scg-k8s
-   #  - routes-and-predicates
+    - overview-routes
     - exercises/define-gateway-instance
     - exercises/scale-up-down
     - exercises/actuators
@@ -17,6 +17,7 @@ modules:
     - exercises/circuit-breaker
    #  - exercises/rate-limiting
     - exercises/sso
+    - exercises/observability
     # - exercises/rbac
     # - exercises/scopes-authorization
     # - exercises/authorized-token-relay

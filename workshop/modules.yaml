@@ -13,10 +13,10 @@ modules:
         exit_sign: Spring Cloud Gateway for Kubernetes
     scg-k8s:
         name: Spring Cloud Gateway for Kubernetes
-        exit_sign: Routes and predicates
-    # routes-and-predicates:
-    #     name: Route Predicates
-    #     exit_sign: Start Using Spring Cloud Gateway
+        exit_sign: Route Overview
+    overview-routes:
+        name: Route Overview
+        exit_sign: Start Using Spring Cloud Gateway
     exercises/define-gateway-instance:
         name: Create a Gateway Instance
     exercises/scale-up-down:
@@ -35,6 +35,8 @@ modules:
     #     name: Rate Limiting
     exercises/sso:
         name: Single Sign On
+    exercises/sso:
+        name: Observability
     # exercises/rbac:
     #     name: Role Based Access Control
     # exercises/scopes-authorization:
