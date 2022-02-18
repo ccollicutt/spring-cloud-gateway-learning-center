@@ -14,3 +14,7 @@ spec:
     capacity: 10
     expires: 90m
     orphaned: 10m
+  - name: writing-great-dockerfiles-is-hard-staging
+    capacity: 10
+    expires: 90m
+    orphaned: 10m
